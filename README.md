@@ -1,2 +1,2 @@
-# hm.github.io
-Personal Webpage
+# Henry Maas
+Personal Github WebPage
