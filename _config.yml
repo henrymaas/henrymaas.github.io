@@ -1,5 +1,5 @@
 # Site settings
-title: Oxy-Website
+title: Henry Maas
 description: 'Henry Maas | GitHub Pages'
 url: ''
 baseurl: '/oxydrain.github.io'
@@ -38,6 +38,14 @@ kramdown:
   input: GFM
   # do not replace newlines by <br>s
   hard_wrap: false
+  math_engine: mathjax
+
+#Github Pages
+gist:
+  noscript: false
+lsi: false
+safe: true
+incremental: false
 
 plugins: ['jekyll-paginate']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
