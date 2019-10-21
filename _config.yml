@@ -1,0 +1,43 @@
+# Site settings
+title: Oxy-Website
+description: 'Henry Maas | GitHub Pages'
+url: ''
+baseurl: '/oxydrain.github.io'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Henry Maas'
+  email: rhy@outlook.com
+  twitter_username: oxydrain
+  facebook_username: maashenry
+  github_username:  oxydrain
+  linkedin_username:  maashenry
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
