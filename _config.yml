@@ -1,52 +1,60 @@
-# Site settings
-title: Henry Maas
-description: 'A.I, Computer Engineering Student • Software Developer • 
-  Musician • Skynet Evangelist'
-url: ''
-baseurl: '/'
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+### Site Settings ###
+title               : Henry Maas
+description         : >-                               # >- means to ignore newlines until "url:"
 
+url                 : ""                               # base hostname & protocol for your site (e.g. http://example.com)
+baseurl             : ""                   # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
+repository          : oxydrain    # repository metadata on GitHub Pages [know more at https://help.github.com/en/articles/repository-metadata-on-github-pages]
+
+### Author Info ###
 author:
-  name: 'Henry Maas'
-  email: rhy@outlook.com
-  twitter_username: oxydrain
-  facebook_username: maashenry
-  github_username:  oxydrain
-  linkedin_username:  maashenry
+  name              : Henry Maas
+  image             : /assets/images/HM.png
+  email             : rhy@outlook.com
+  facebook          : maashenry
+  github            : oxydrain
+# gitlab            : your_username
+# instagram         : your_username
+  linkedin          : maashenry
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+  twitter           : oxydrain
+# vimeo             : your_username
+# youtube           : your_channel_name
 
+
+### Pagination ###
+paginate: 6
+paginate_path: "/articles/page-:num/"
+
+
+### Posts Permalink ###
+permalink: articles/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+
+### Defaults for collections ###
 defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
+  - scope:
+      path: ""
+      type: "projects"
     values:
-        layout: 'post'
+      layout: "page"
 
-# Build settings
-destination: _site
-paginate: 10
-permalink: /:year/:title/
-markdown: kramdown
-highlighter: rouge
 
-sass:
-    sass_dir: _sass
-    style: compressed
-
-kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
-  math_engine: mathjax
-
-#Github Pages
-gist:
-  noscript: false
-lsi: false
-safe: true
-incremental: false
-
-plugins: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+### Exclude from processing ###
+exclude:
+- README.md
+- CONTRIBUTING.md
+- LICENSE
+- Gemfile
+- Gemfile.lock

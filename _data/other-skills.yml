@@ -1,0 +1,11 @@
+- name: Linux/Windows Server
+  percentage: 90
+  color: info
+
+- name: Virtualization/Clustering
+  percentage: 90
+  color: success
+
+- name: NoSQL/MongoDB
+  percentage: 80
+  color: success
