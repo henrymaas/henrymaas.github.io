@@ -1,14 +1,14 @@
 - name: Python
   percentage: 90
-  color: blue
+  color: warning
 
 - name: C/C++
   percentage: 70
-  color: danger
+  color: secondary
 
 - name: HTML5/CSS3
   percentage: 60
-  color: danger
+  color: info
 
 - name: React
   percentage: 60
