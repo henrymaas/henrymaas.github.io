@@ -8,7 +8,7 @@ weight: 3
 # **Profile**
 
 Hello! I am **{{ site.author.name }}**,<br>
-I'm an experienced professional skilled in IT Infrastructure and High Avaulability Environments,
+I'm an experienced professional skilled in IT Infrastructure and High Availability Environments,
 recently moved to a Developer position, programming, developing and researching new technologies
 with Artificial Intelligence.<br>
 
